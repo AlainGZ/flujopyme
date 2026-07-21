@@ -17,7 +17,7 @@ FlujoPyme permite:
 
 | Capa | Tecnología |
 |---|---|
-| Backend | Java 21, Spring Boot 3.x, Spring Data JPA, Spring Security, JWT (jjwt 0.12.5) |
+| Backend | Java 21, Spring Boot, Spring Data JPA, Spring Security, JWT |
 | Frontend | React, Vite, Tailwind CSS, Recharts |
 | Base de datos | PostgreSQL (Neon.tech en producción) |
 | Arquitectura | Hexagonal (puertos y adaptadores) |
@@ -64,7 +64,7 @@ Estrategia de ramas:
 | `main` | Código en producción. Solo recibe merges desde `release/*` o `hotfix/*`. Protegida. |
 | `develop` | Integración continua de features. Base de todo `feature/*`. |
 | `feature/<nombre>` | Una funcionalidad o historia de usuario específica. Nace de `develop`, se fusiona a `develop`. |
-| `release/<version>` | Estabilización previa a producción (ej. `release/1.0.0`). Nace de `develop`, se fusiona a `main` y `develop`. |
+| `release/<version>` | Estabilización previa a producción (ej. `release/1.00`). Nace de `develop`, se fusiona a `main` y `develop`. |
 
 Convención de nombres de rama: `feature/rf-04-registro-ingreso`, `feature/rf-10-flujo-caja-neto`.
 
@@ -100,7 +100,7 @@ Servidor de desarrollo en `http://localhost:5173`, con CORS habilitado en el bac
 
 ## Estado del proyecto
 
-En desarrollo — Fase 0 (configuración inicial). Ver `docs/BACKLOG_SPRINTS.md` para el detalle de épicas, historias de usuario y planificación de sprints.
+En desarrollo — Fase 0 (configuración inicial). 
 
 ## Licencia
 
