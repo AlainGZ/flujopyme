@@ -6,5 +6,5 @@ public interface IniciarSesionUseCase {
 
 	TokenGeneratorPort.TokenGenerado iniciarSesion(CredencialesComando comando);
 
-	record CredencialesComando(String correo, String contrasenaPlana){}
+	record CredencialesComando(String correo, String contrasenaPlano){}
 }
